@@ -7,7 +7,6 @@ import * as serviceWorker from './serviceWorker';
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    <h1> Starting project Stranger Things Front-End </h1>
   </React.StrictMode>,
   document.getElementById('root'),
 );

@@ -1,4 +1,3 @@
-import { toContainElement } from '@testing-library/jest-dom';
 import React from 'react';
 import CharactersService from '../services/charactersAPI';
 import Table from './Table';
@@ -10,16 +9,14 @@ const getRealityClass = (hereIsTheUpsideDownWorld) => (
 );
 
 const timeOut = 30000;
-const hawkinsURL = 'https://victormartins-up.herokuapp.com/';
-const upsideDownURL = 'https://victormartins-dw.herokuapp.com/';
 
 const strangerThingsConfig = {
-  url: process.env.REACT_APP_HAWKINS_URL || hawkinsURL,
+  url: process.env.REACT_APP_HAWKINS_URL || 'http://localhost:3002',
   timeout: process.env.REACT_APP_HAWKINS_TIMEOUT || timeOut,
 };
 
 const upsideDownConfig = {
-  url: process.env.REACT_APP_UPSIDEDOWN_URL || upsideDownURL,
+  url: process.env.REACT_APP_UPSIDEDOWN_URL || 'http://localhost:3003',
   timeout: process.env.REACT_APP_UPSIDEDOWN_TIMEOUT || timeOut,
 };
 
